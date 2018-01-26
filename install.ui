@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Install</class>
+ <widget class="QMainWindow" name="Install">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1140</width>
+    <height>936</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Installation Ticket</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>5</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="1">
+     <widget class="QScrollArea" name="scrollArea_2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>370</width>
+        <height>810</height>
+       </size>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>-509</y>
+         <width>373</width>
+         <height>1300</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout_3">
+        <item row="0" column="0" colspan="2">
+         <widget class="QLabel" name="CUSTOMER_INFORMATION">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; text-decoration: underline;&quot;&gt;Customer Information:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label_cstName">
+          <property name="text">
+           <string>Customer Name:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="5" column="0">
+         <widget class="QLineEdit" name="cstName"/>
+        </item>
+        <item row="8" column="0">
+         <widget class="QLabel" name="label_buildingType">
+          <property name="text">
+           <string>Building Type:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0">
+         <widget class="QLineEdit" name="cstBuilding"/>
+        </item>
+        <item row="12" column="0">
+         <widget class="QLabel" name="label_cstRoof">
+          <property name="text">
+           <string>Roof Type:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0">
+         <widget class="QLineEdit" name="cstRoof"/>
+        </item>
+        <item row="14" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>Number of Floors:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="15" column="0">
+         <widget class="QSpinBox" name="cstFloorCount">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>25</height>
+           </size>
+          </property>
+          <property name="minimum">
+           <number>1</number>
+          </property>
+          <property name="maximum">
+           <number>4</number>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="0">
+         <widget class="QGroupBox" name="cst_Group_Package">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>125</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Internet Service:</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <widget class="QRadioButton" name="cstPackRes">
+             <property name="text">
+              <string>Residential</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="cstPackBus">
+             <property name="text">
+              <string>Business</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="cstPackOth">
+             <property name="text">
+              <string>Other</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="cstPackage">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="17" column="0">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>150</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Contract Agreement:</string>
+          </property>
+          <layout class="QFormLayout" name="formLayout_4">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="cstContract150">
+             <property name="text">
+              <string>1 Year Agreement</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="cstContract75">
+             <property name="text">
+              <string>2 Year Agreement</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QRadioButton" name="cstContractNo">
+             <property name="text">
+              <string>No Contract</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLineEdit" name="cstContractPrice">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>125</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="placeholderText">
+              <string>$150, $75, $300, Free, etc.</string>
+             </property>
+             <property name="clearButtonEnabled">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>Price:</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="18" column="0">
+         <widget class="QGroupBox" name="cst_Group_VoIP">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>95</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>VoIP Service:</string>
+          </property>
+          <layout class="QFormLayout" name="formLayout">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="cstVoipContract">
+             <property name="text">
+              <string>No Contract</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="cstVoipYear">
+             <property name="text">
+              <string>1 Year</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QRadioButton" name="cstVoipNo">
+             <property name="text">
+              <string>Not Interested</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="19" column="0">
+         <widget class="QGroupBox" name="cst_Group_Router">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>95</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Router:</string>
+          </property>
+          <layout class="QFormLayout" name="formLayout_6">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="cstRouterManaged">
+             <property name="text">
+              <string>Managed Router</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="cstRouterPurchase">
+             <property name="text">
+              <string>Purchase Router</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QRadioButton" name="cstRouterOwn">
+             <property name="text">
+              <string>Providing Own Router</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="20" column="0">
+         <widget class="QGroupBox" name="cst_Gorup_Maintenance">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Service Maintenance Plan:</string>
+          </property>
+          <layout class="QFormLayout" name="formLayout_9">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="cstMaintYes">
+             <property name="text">
+              <string>Interested</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="cstMaintNo">
+             <property name="text">
+              <string>Not Interested</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="21" column="0">
+         <widget class="QGroupBox" name="cst_Group_Statements">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Statements:</string>
+          </property>
+          <layout class="QFormLayout" name="formLayout_7">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="cstStatePaper">
+             <property name="text">
+              <string>Paper ($3 Monthly Fee)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="cstStateEmail">
+             <property name="text">
+              <string>Email</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="22" column="0">
+         <widget class="QGroupBox" name="cst_Group_AtticRun">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>70</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Attic Run ($95 Per Hour Fee):</string>
+          </property>
+          <layout class="QFormLayout" name="formLayout_8">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="cstAtticYes">
+             <property name="text">
+              <string>Yes</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="cstAtticNo">
+             <property name="text">
+              <string>No</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="23" column="0">
+         <spacer name="verticalSpacer_7">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="24" column="0">
+         <widget class="QLabel" name="label_11">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; text-decoration: underline; color:#aa0000;&quot;&gt;IMPORTANT:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="25" column="0">
+         <widget class="QCheckBox" name="tktQStatic">
+          <property name="text">
+           <string>Advised a static IP is recommended when Gaming or using Cameras.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="26" column="0">
+         <widget class="QCheckBox" name="tktQInstall">
+          <property name="text">
+           <string>Standard installation explained.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="27" column="0">
+         <widget class="QCheckBox" name="tktQHolder">
+          <property name="text">
+           <string>Confirmed account holder will be onsite for appointment.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="28" column="0">
+         <widget class="QCheckBox" name="tktQConfirm">
+          <property name="text">
+           <string>Customer is aware that we need a confirmation before heading out.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="29" column="0">
+         <widget class="QLabel" name="label_10">
+          <property name="text">
+           <string>Any animals onsite must be contained while our technician is on site.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="30" column="0">
+         <widget class="QCheckBox" name="tktQDisclose">
+          <property name="text">
+           <string>Disclosure Read.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="31" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>Advised that the only forms of payment accepted are Money Order,</string>
+          </property>
+         </widget>
+        </item>
+        <item row="32" column="0">
+         <widget class="QLabel" name="label_7">
+          <property name="text">
+           <string>Credit Card, and Debit Card at the time of installation.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="33" column="0">
+         <widget class="QCheckBox" name="tktQPayment">
+          <property name="text">
+           <string>Disclosure Read.</string>
+          </property>
+         </widget>
+        </item>
+        <item row="48" column="0">
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QTextEdit" name="ticketTemplate">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>370</width>
+        <height>0</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QGroupBox" name="Ticket_Buttons">
+      <property name="minimumSize">
+       <size>
+        <width>370</width>
+        <height>50</height>
+       </size>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="2">
+        <widget class="QPushButton" name="Copy">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="text">
+          <string>Copy to Clipboard</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="pushButton">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Generate Ticket</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="Clear">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="minimumSize">
+          <size>
+           <width>100</width>
+           <height>30</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Clear</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>370</width>
+        <height>810</height>
+       </size>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustToContents</enum>
+      </property>
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>368</width>
+         <height>808</height>
+        </rect>
+       </property>
+       <layout class="QFormLayout" name="formLayout_2">
+        <item row="0" column="0">
+         <widget class="QLabel" name="ticketInfo">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; text-decoration: underline;&quot;&gt;Ticket Information:           &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>Zone:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QComboBox" name="tktZone">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>50</width>
+            <height>0</height>
+           </size>
+          </property>
+          <item>
+           <property name="text">
+            <string/>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>6</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>7</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="15" column="0">
+         <widget class="QLabel" name="towerBox">
+          <property name="text">
+           <string>Closest Tower:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="16" column="0" colspan="2">
+         <widget class="QComboBox" name="tktTower">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>140</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="currentIndex">
+           <number>-1</number>
+          </property>
+         </widget>
+        </item>
+        <item row="17" column="0">
+         <spacer name="verticalSpacer_6">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="20" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Install Date</string>
+          </property>
+         </widget>
+        </item>
+        <item row="21" column="0">
+         <widget class="QCalendarWidget" name="tktCalendar">
+          <property name="gridVisible">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="22" column="0">
+         <widget class="QDateEdit" name="tktDateText"/>
+        </item>
+        <item row="23" column="0">
+         <widget class="QGroupBox" name="tkt_Group_TimeBlock">
+          <property name="minimumSize">
+           <size>
+            <width>200</width>
+            <height>100</height>
+           </size>
+          </property>
+          <property name="title">
+           <string>Time Block Assigned</string>
+          </property>
+          <layout class="QFormLayout" name="formLayout_5">
+           <item row="0" column="0">
+            <widget class="QRadioButton" name="tkt_am">
+             <property name="text">
+              <string>A.M.</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QRadioButton" name="tkt_pm">
+             <property name="text">
+              <string>P.M.</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QRadioButton" name="tkt_other">
+             <property name="text">
+              <string>Other</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="tkt_other_time">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="44" column="0">
+         <widget class="QLabel" name="label_14">
+          <property name="text">
+           <string>Notes:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="45" column="0">
+         <widget class="QTextEdit" name="tktNotes">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>300</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>80</height>
+           </size>
+          </property>
+          <property name="tabChangesFocus">
+           <bool>true</bool>
+          </property>
+          <property name="placeholderText">
+           <string>Is there any important information the techinician completeting the installation needs to know?</string>
+          </property>
+         </widget>
+        </item>
+        <item row="43" column="0">
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+       <zorder>ticketInfo</zorder>
+       <zorder>tktZone</zorder>
+       <zorder>label</zorder>
+       <zorder>tktTower</zorder>
+       <zorder>towerBox</zorder>
+       <zorder>tktCalendar</zorder>
+       <zorder>label_3</zorder>
+       <zorder>tktDateText</zorder>
+       <zorder>label_14</zorder>
+       <zorder>tktNotes</zorder>
+       <zorder>verticalSpacer_6</zorder>
+       <zorder>tkt_Group_TimeBlock</zorder>
+       <zorder>verticalSpacer_3</zorder>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1140</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <tabstops>
+  <tabstop>scrollArea</tabstop>
+  <tabstop>tktZone</tabstop>
+  <tabstop>tktTower</tabstop>
+  <tabstop>tktCalendar</tabstop>
+  <tabstop>tktDateText</tabstop>
+  <tabstop>tkt_am</tabstop>
+  <tabstop>tkt_pm</tabstop>
+  <tabstop>tkt_other</tabstop>
+  <tabstop>tkt_other_time</tabstop>
+  <tabstop>tktNotes</tabstop>
+  <tabstop>scrollArea_2</tabstop>
+  <tabstop>cstName</tabstop>
+  <tabstop>cstBuilding</tabstop>
+  <tabstop>cstRoof</tabstop>
+  <tabstop>cstFloorCount</tabstop>
+  <tabstop>cstPackRes</tabstop>
+  <tabstop>cstPackBus</tabstop>
+  <tabstop>cstPackOth</tabstop>
+  <tabstop>cstPackage</tabstop>
+  <tabstop>cstContract150</tabstop>
+  <tabstop>cstContract75</tabstop>
+  <tabstop>cstContractNo</tabstop>
+  <tabstop>cstContractPrice</tabstop>
+  <tabstop>cstVoipContract</tabstop>
+  <tabstop>cstVoipYear</tabstop>
+  <tabstop>cstVoipNo</tabstop>
+  <tabstop>cstRouterManaged</tabstop>
+  <tabstop>cstRouterPurchase</tabstop>
+  <tabstop>cstRouterOwn</tabstop>
+  <tabstop>cstMaintYes</tabstop>
+  <tabstop>cstMaintNo</tabstop>
+  <tabstop>cstStatePaper</tabstop>
+  <tabstop>cstStateEmail</tabstop>
+  <tabstop>cstAtticYes</tabstop>
+  <tabstop>cstAtticNo</tabstop>
+  <tabstop>tktQStatic</tabstop>
+  <tabstop>tktQInstall</tabstop>
+  <tabstop>tktQHolder</tabstop>
+  <tabstop>tktQConfirm</tabstop>
+  <tabstop>tktQDisclose</tabstop>
+  <tabstop>tktQPayment</tabstop>
+  <tabstop>ticketTemplate</tabstop>
+  <tabstop>pushButton</tabstop>
+  <tabstop>Copy</tabstop>
+  <tabstop>Clear</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>tktCalendar</sender>
+   <signal>clicked(QDate)</signal>
+   <receiver>tktDateText</receiver>
+   <slot>setDate(QDate)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>164</x>
+     <y>-156</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>107</x>
+     <y>-56</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>tktDateText</sender>
+   <signal>dateChanged(QDate)</signal>
+   <receiver>tktCalendar</receiver>
+   <slot>setSelectedDate(QDate)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>101</x>
+     <y>-56</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>187</x>
+     <y>-82</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
