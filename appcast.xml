@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
     <channel>
         <title>Version 1.3.0 Release</title>
@@ -7,7 +6,7 @@
         <item>
             <title>Version 1.3.0</title>
             <sparkle:releaseNotesLink>
-                https://raw.githubusercontent.com/gteklee/TicketProgram/master/release/release_notes.html
+                https://github.com/gteklee/TicketProgram/release/release_notes.html
             </sparkle:releaseNotesLink>
             <pubDate>Fri, 26 Jan 2018 </pubDate>
             <enclosure url="https://github.com/gteklee/TicketProgram/release/setup.exe"
